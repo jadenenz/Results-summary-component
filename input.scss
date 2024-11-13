@@ -12,13 +12,23 @@ $circle-gradient-2: hsla(241, 72%, 46%, 0);
 body {
   font-family: "Hanken Grotesk", sans-serif;
   margin: 0;
+  height: 100vh;
+}
+
+main {
+  padding-bottom: 1.5rem;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: relative;
 }
 
 .result-container {
   display: flex;
   flex-direction: column;
   background: linear-gradient($result-gradient-1, $result-gradient-2);
-  border-radius: 0% 0% 15% 15%;
+  border-radius: 0% 0% 30px 30px;
   color: white;
   padding: 10px;
   gap: 10px;
@@ -29,31 +39,38 @@ body {
   display: flex;
   flex-direction: column;
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background: linear-gradient($circle-gradient-1, $circle-gradient-2);
   justify-content: center;
   align-items: center;
 }
 
 .result-text {
+  font-size: 1.25rem;
   font-weight: 700;
   color: hsla(0, 0%, 100%, 0.7);
 }
 
 .final-score {
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 800;
 }
 
 .score-out-of {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: hsla(0, 0%, 100%, 0.6);
 }
 
 .result-keyword {
+  margin-top: 20px;
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.result-description {
+  width: 75%;
+  text-align: center;
 }
 
 .summary-container {
@@ -68,5 +85,72 @@ body {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   padding: 0;
+  width: 100%;
+}
+
+.category-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.category-bar-left {
+  display: flex;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.category-bar-container.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.category-bar-container.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.category-bar-container.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.category-bar-container.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.reaction {
+  color: hsl(0, 100%, 67%);
+}
+
+.memory {
+  color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual {
+  color: hsl(234, 85%, 45%);
+}
+
+.category-score {
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: hsl(234, 85%, 20%);
+}
+
+.results-score-out-of {
+  color: hsla(234, 85%, 20%, 0.5);
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
 }

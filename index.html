@@ -34,65 +34,91 @@
     </style>
   </head>
   <body>
-    <main>
-      <div class="result-container">
-        <div>Your Result</div>
-        <div class="result-score-container">
-          <div class="final-score">76</div>
-          <div class="score-out-of">of 100</div>
+    <div class="wrapper">
+      <main>
+        <div class="result-container">
+          <p class="result-text">Your Result</p>
+          <div class="result-score-container">
+            <div class="final-score">76</div>
+            <div class="score-out-of">of 100</div>
+          </div>
+          <div class="result-keyword">Great</div>
+          <div class="result-description">
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
         </div>
-        <div class="result-keyword">Great</div>
-        <div class="result-description">
-          <p>
-            You scored higher than 65% of the people who have taken these tests.
-          </p>
+        <div class="summary-container">
+          <p class="summary-title">Summary</p>
+          <div class="categories-list-container">
+            <ul>
+              <div class="category-bar-container reaction">
+                <div class="category-bar-left reaction">
+                  <img
+                    alt="lightning bolt symbol"
+                    src="assets/images/icon-reaction.svg"
+                  />
+                  <p>Reaction</p>
+                </div>
+                <div class="category-score">
+                  80 <span class="results-score-out-of">/ 100</span>
+                </div>
+              </div>
+              <div class="category-bar-container memory">
+                <div class="category-bar-left memory">
+                  <img
+                    alt="lightning bolt symbol"
+                    src="assets/images/icon-memory.svg"
+                  />
+                  <p>Memory</p>
+                </div>
+                <div class="category-score">
+                  92 <span class="results-score-out-of">/ 100</span>
+                </div>
+              </div>
+              <div class="category-bar-container verbal">
+                <div class="category-bar-left verbal">
+                  <img
+                    alt="lightning bolt symbol"
+                    src="assets/images/icon-verbal.svg"
+                  />
+                  <p>Verbal</p>
+                </div>
+                <div class="category-score">
+                  61 <span class="results-score-out-of">/ 100</span>
+                </div>
+              </div>
+              <div class="category-bar-container visual">
+                <div class="category-bar-left visual">
+                  <img
+                    alt="lightning bolt symbol"
+                    src="assets/images/icon-visual.svg"
+                  />
+                  <p>Visual</p>
+                </div>
+                <div class="category-score">
+                  72 <span class="results-score-out-of">/ 100</span>
+                </div>
+              </div>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="summary-container">
-        <p class="summary-title">Summary</p>
-        <div class="categories-list-container">
-          <ul>
-            <div class="category-bar-container reaction">
-              <img
-                alt="lightning bolt symbol"
-                src="assets/images/icon-reaction.svg"
-              />
-              <p>Reaction</p>
-              <div class="category-score">80 / 100</div>
-            </div>
-            <div class="category-bar-container memory">
-              <img alt="clock symbol" src="assets/images/icon-memory.svg" />
-              <p>Memory</p>
-              <div class="category-score">92 / 100</div>
-            </div>
-            <div class="category-bar-container verbal">
-              <img
-                alt="speech bubble symbol"
-                src="assets/images/icon-verbal.svg"
-              />
-              <p>Verbal</p>
-              <div class="category-score">61 / 100</div>
-            </div>
-            <div class="category-bar-container visual">
-              <img alt="eyeball symbol" src="assets/images/icon-visual.svg" />
-              <p>Visual</p>
-              <div class="category-score">72 / 100</div>
-            </div>
-          </ul>
-        </div>
-      </div>
-      <!-- 76 of 100 Great You scored higher than 65% of the people who
-      have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal
-      61 / 100 Visual 72 / 100 Continue -->
-    </main>
+        <!-- 76 of 100 Great You scored higher than 65% of the people who
+        have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal
+        61 / 100 Visual 72 / 100 Continue -->
+      </main>
 
-    <footer>
-      <div class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/jadenenz">Jaden Enzbrenner</a>.
-      </div>
-    </footer>
+      <footer>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by
+          <a href="https://github.com/jadenenz">Jaden Enzbrenner</a>.
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
