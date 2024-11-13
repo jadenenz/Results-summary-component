@@ -1,0 +1,63 @@
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  margin: 0;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 0% 0% 15% 15%;
+  color: white;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+}
+
+.result-score-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(hsl(256, 72%, 46%), hsla(241, 72%, 46%, 0));
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-weight: 700;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.final-score {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.score-out-of {
+  font-size: 0.8rem;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+
+.result-keyword {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  margin: 35px;
+}
+
+.summary-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding: 0;
+}
+
+/*# sourceMappingURL=output.css.map */
