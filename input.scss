@@ -154,3 +154,50 @@ footer {
   width: 100%;
   height: 1.5rem;
 }
+
+.continue-button {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    display: flex;
+    border: 1px solid hsla(0, 0%, 0%, 0.1);
+    border-radius: 30px;
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.27);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.27);
+    box-shadow: 10px 10px 5px -4px rgba(0, 0, 0, 0.27);
+    padding-bottom: 0;
+  }
+
+  .summary-container {
+    width: 100%;
+  }
+
+  .result-container {
+    border-radius: 30px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .continue-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 15px 0px;
+    cursor: pointer;
+  }
+
+  .continue-button:hover {
+    background: linear-gradient($result-gradient-1, $result-gradient-2);
+  }
+}
